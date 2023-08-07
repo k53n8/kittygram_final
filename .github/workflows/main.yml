@@ -170,9 +170,8 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        sticker: 👍        
         message: |
-        ${{ github.actor }} сделал коммит:
-        Сообщение коммита: ${{ github.event.commits[0].message }}
-        Репозиторий: ${{ github.repository }}
-        Все изменения: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          ${{ github.actor }} сделал коммит:
+          Сообщение коммита: ${{ github.event.commits[0].message }}
+          Репозиторий: ${{ github.repository }}
+          Все изменения: https://github.com/${{ github.repository }}/commit/${{github.sha}}
